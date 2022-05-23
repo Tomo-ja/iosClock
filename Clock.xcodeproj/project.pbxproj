@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		E52A2247283B4D6E008272C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A2246283B4D6E008272C4 /* AppDelegate.swift */; };
 		E52A2249283B4D6E008272C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A2248283B4D6E008272C4 /* SceneDelegate.swift */; };
-		E52A224B283B4D6E008272C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A224A283B4D6E008272C4 /* ViewController.swift */; };
 		E52A224E283B4D6E008272C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52A224C283B4D6E008272C4 /* Main.storyboard */; };
 		E52A2250283B4D70008272C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52A224F283B4D70008272C4 /* Assets.xcassets */; };
 		E52A2253283B4D70008272C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52A2251283B4D70008272C4 /* LaunchScreen.storyboard */; };
+		E52A225B283B5646008272C4 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52A225A283B5646008272C4 /* StopwatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E52A2243283B4D6E008272C4 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52A2246283B4D6E008272C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E52A2248283B4D6E008272C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E52A224A283B4D6E008272C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E52A224D283B4D6E008272C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E52A224F283B4D70008272C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52A2252283B4D70008272C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52A2254283B4D70008272C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52A225A283B5646008272C4 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,11 @@
 			children = (
 				E52A2246283B4D6E008272C4 /* AppDelegate.swift */,
 				E52A2248283B4D6E008272C4 /* SceneDelegate.swift */,
-				E52A224A283B4D6E008272C4 /* ViewController.swift */,
 				E52A224C283B4D6E008272C4 /* Main.storyboard */,
 				E52A224F283B4D70008272C4 /* Assets.xcassets */,
 				E52A2251283B4D70008272C4 /* LaunchScreen.storyboard */,
 				E52A2254283B4D70008272C4 /* Info.plist */,
+				E52A225A283B5646008272C4 /* StopwatchViewController.swift */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52A224B283B4D6E008272C4 /* ViewController.swift in Sources */,
+				E52A225B283B5646008272C4 /* StopwatchViewController.swift in Sources */,
 				E52A2247283B4D6E008272C4 /* AppDelegate.swift in Sources */,
 				E52A2249283B4D6E008272C4 /* SceneDelegate.swift in Sources */,
 			);

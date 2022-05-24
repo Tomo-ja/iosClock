@@ -117,25 +117,16 @@ class StopwatchViewController: UIViewController, UITableViewDelegate, UITableVie
         milliSeconds = 0
     }
     @IBAction func lapButtonTapped(_ sender: UIButton) {
-        let time = "\(minitues) : \(seconds) , \(milliSeconds)"
+        let time = "\(minitues) : \(seconds) . \(milliSeconds)"
         lapTimes.insert(time, at: 0)
         tableView.reloadData()
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lapTimes.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "lapTimeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "lapTimeCell", for: indexPath)
         cell.textLabel?.text = lapTimes[indexPath.row]
         return cell
     }

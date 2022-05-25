@@ -126,10 +126,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-38-CNU">
-                                <rect key="frame" x="119" y="418" width="176.5" height="60"/>
+                                <rect key="frame" x="63" y="418" width="288" height="60"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvI-3c-h7a">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYW-8r-j3M">
                                         <rect key="frame" x="0.0" y="0.0" width="65" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="eYh-cs-hfu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-bb-PX0">
+                                        <rect key="frame" x="84" y="11.5" width="8.5" height="37"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvI-3c-h7a">
+                                        <rect key="frame" x="111.5" y="0.0" width="65" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="Qdf-99-HWl"/>
                                         </constraints>
@@ -138,13 +153,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN7-fO-fSo">
-                                        <rect key="frame" x="84" y="11.5" width="8.5" height="37"/>
+                                        <rect key="frame" x="195.5" y="11.5" width="8.5" height="37"/>
                                         <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbH-za-5aZ">
-                                        <rect key="frame" x="111.5" y="0.0" width="65" height="60"/>
+                                        <rect key="frame" x="223" y="0.0" width="65" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="65" id="K13-E6-WFU"/>
                                         </constraints>
@@ -158,6 +173,9 @@
                                 <rect key="frame" x="176.5" y="498" width="61" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="wAS-Gc-UnM" eventType="touchUpInside" id="fKG-j4-Veb"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="UtN-tR-mgU">
                                 <rect key="frame" x="174.5" y="718" width="65" height="65"/>
@@ -170,6 +188,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="cotrolButtonTapped:" destination="wAS-Gc-UnM" eventType="touchUpInside" id="NeG-Cb-b9w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -192,6 +213,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="controlButton" destination="C0L-mD-EOv" id="7La-By-NNV"/>
+                        <outlet property="hourLabel" destination="OYW-8r-j3M" id="afE-oI-K5q"/>
+                        <outlet property="minutesLabel" destination="qvI-3c-h7a" id="JOO-28-cV9"/>
+                        <outlet property="secondsLabel" destination="TbH-za-5aZ" id="Ut1-uz-rdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kyt-Gh-7Az" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
